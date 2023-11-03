@@ -6,7 +6,15 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send(`<h1>Server is running on port ${process.env.PORT}</h1>`)
+  res.send(`<html>
+    <head>
+      <title>Books App Api</title>
+    </head>
+
+    <body>
+      <h1>Welcome to API Application</h1>
+    </body>
+  </html>`)
 })
 
 app.listen(process.env.PORT, () => {
